@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25899CAC1FC22903000E7226 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25899CAB1FC22903000E7226 /* main.cpp */; };
+		25899CB41FC229B9000E7226 /* TestScores.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25899CB21FC229B9000E7226 /* TestScores.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		25899CA81FC22903000E7226 /* CPP-PRG-13-07-TestScores-Class */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CPP-PRG-13-07-TestScores-Class"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25899CAB1FC22903000E7226 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25899CB21FC229B9000E7226 /* TestScores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestScores.cpp; sourceTree = "<group>"; };
+		25899CB31FC229B9000E7226 /* TestScores.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestScores.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				25899CAB1FC22903000E7226 /* main.cpp */,
+				25899CB21FC229B9000E7226 /* TestScores.cpp */,
+				25899CB31FC229B9000E7226 /* TestScores.hpp */,
 			);
 			path = "CPP-PRG-13-07-TestScores-Class";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25899CB41FC229B9000E7226 /* TestScores.cpp in Sources */,
 				25899CAC1FC22903000E7226 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

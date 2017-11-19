@@ -14,8 +14,68 @@
 //  TestScores object.
 
 #include <iostream>
+#include <iomanip>
+#include "TestScores.hpp"
+
+TestScores getScores();
+void outputAverageScore(TestScores);
 
 int main()
 {
+    TestScores testScores;
+    
+    testScores = getScores();
+    
+    outputAverageScore(testScores);
+    
     return 0;
+}
+
+TestScores getScores()
+{
+    TestScores tsTemp;
+    
+    double dblTempScore;
+    
+    std::cout << "Please enter the first test score: ";
+    std::cin >> dblTempScore;
+    while (!std::cin || dblTempScore < 0.0 || dblTempScore > 100.0)
+    {
+        std::cout << "Please enter a number between 0 and 100: ";
+        std::cin.clear();
+        std::cin.ignore();
+        std::cin >> dblTempScore;
+    }
+    tsTemp.setScore01(dblTempScore);
+    
+    std::cout << "Please enter the second test score: ";
+    std::cin >> dblTempScore;
+    while (!std::cin || dblTempScore < 0.0 || dblTempScore > 100.0)
+    {
+        std::cout << "Please enter a number between 0 and 100: ";
+        std::cin.clear();
+        std::cin.ignore();
+        std::cin >> dblTempScore;
+    }
+    tsTemp.setScore02(dblTempScore);
+    
+    std::cout << "Please enter the third test score: ";
+    std::cin >> dblTempScore;
+    while (!std::cin || dblTempScore < 0.0 || dblTempScore > 100.0)
+    {
+        std::cout << "Please enter a number between 0 and 100: ";
+        std::cin.clear();
+        std::cin.ignore();
+        std::cin >> dblTempScore;
+    }
+    tsTemp.setScore03(dblTempScore);
+    
+    return tsTemp;
+}
+
+void outputAverageScore(TestScores tsTemp)
+{
+    std::cout << std::fixed << std::showpoint << std::setprecision(1);
+    std::cout << "Test score average: ";
+    std::cout << tsTemp.getAverageScore() << std::endl;
 }
